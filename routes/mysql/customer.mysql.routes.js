@@ -14,7 +14,8 @@ module.exports = function(app) {
   });
 
   app.get('/api/mysql/fetch/:id', customerMysqlController.fetch);
-  app.get('/api/mysal/fetch', customerMysqlController.fetchAll);
+  app.get('/api/mysql/fetch', customerMysqlController.fetchAll);
+  app.post('/api/mysql/create', customerMysqlController.create);
   
 };
 
